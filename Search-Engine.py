@@ -1,5 +1,6 @@
 """
 ###################################################################################
+
 Harvard Art Museum API
 - Get API Key: https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform
 - API Docs: https://github.com/harvardartmuseums/api-docs
@@ -7,17 +8,22 @@ Harvard Art Museum API
 - Image route: /image 
     - Docs: https://github.com/harvardartmuseums/api-docs/blob/master/sections/image.md
 Example request: https://api.harvardartmuseums.org/image?apikey=API_KEY&q=cat&size=3
+
 ###################################################################################
+
 Gutendex Book API
 - Docs: https://gutendex.com/
 Example Request: https://gutendex.com/books/?search=dickens
+
 ###################################################################################
+
 News API
 - Register: https://newsapi.org/register
 - Get Started: https://newsapi.org/docs/get-started
 - Base API URL: https://newsapi.org/v2
 - Search route: /everything
 Example request: https://newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY
+
 ###################################################################################
 """
 from urllib.request import urlopen
