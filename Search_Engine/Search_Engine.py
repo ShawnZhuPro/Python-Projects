@@ -151,14 +151,14 @@ def save_search_results(search_term, artworks, books, articles, username):
     }
 
     # Opens the json in write text mode, which replaces old data with new
-    with open("search-results.json", mode="wt") as json_file:
+    with open("Search_Results.json", mode="wt") as json_file:
         # Replaces old data in the search_results dict with new data
         dump(search_results, json_file, indent=4)
 
 # Function to load search results from a JSON file
 def load_search_results():
     # Opens the json file in read mode
-    with open("search-results.json", mode="rt") as json_file:
+    with open("Search_Results.json", mode="rt") as json_file:
         # Loads the JSON into the search_results dict
         search_results = load(json_file)
 
