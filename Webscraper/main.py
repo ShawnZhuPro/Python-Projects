@@ -2,7 +2,7 @@
 from urllib.request import urlopen  # For opening URLs
 from urllib.error import URLError  # For handling URL errors
 from pathlib import Path  # For working with file paths
-from webscraper_utilities import get_image_urls  # Custom function to get image URLs
+from Webscraper_utilities import get_image_urls  # Custom function to get image URLs
 from shutil import make_archive, rmtree, move  # For working with directories and archives
 
 # Define a function to download images
