@@ -11,7 +11,7 @@ Example request: https://api.harvardartmuseums.org/image?apikey=API_KEY&q=cat&si
 
 ###################################################################################
 
-Gutendex Book API
+Gutendex Book API 
 - Docs: https://gutendex.com/
 Example Request: https://gutendex.com/books/?search=dickens
 
