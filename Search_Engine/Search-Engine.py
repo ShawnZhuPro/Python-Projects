@@ -5,7 +5,7 @@ Harvard Art Museum API
 - Get API Key: https://docs.google.com/forms/d/1Fe1H4nOhFkrLpaeBpLAnSrIMYvcAxnYWm0IU9a6IkFA/viewform
 - API Docs: https://github.com/harvardartmuseums/api-docs
 - Base URL: https://api.harvardartmuseums.org
-- Image route: /image 
+- Image route: /image  
     - Docs: https://github.com/harvardartmuseums/api-docs/blob/master/sections/image.md
 Example request: https://api.harvardartmuseums.org/image?apikey=API_KEY&q=cat&size=3
 
