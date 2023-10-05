@@ -129,7 +129,7 @@ RENAME = 6
 EXIT = 7
 
 # Define a username and the base image directory
-image_path = Path("C:/Users/shawn/Documents/images")
+image_path = Path("images")
 
 # Main loop for user interaction
 while True:
