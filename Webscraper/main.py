@@ -22,14 +22,17 @@ def zip_directory(directory_name):
     # Define the path to the ZIP archive directory
     zip_directory_path = Path("zip-archives") / directory_name
     # Define the path to the source directory to be zipped
-    directory_path = Path("images") / directory_name
-    
+    directory_path = image_path / directory_name
+
     # Create a ZIP archive of the source directory
     make_archive(zip_directory_path, "zip", directory_path)
-    
+
     # Print a message indicating the ZIP archive creation
     print(f"{directory_name}.zip created!")
-    print(f"You can find it at: {zip_directory_path}.zip")
+
+    # Provide the URL to download the ZIP archive
+    zip_url = f"https://github.com/ShawnZhuPro/Python-Projects/raw/main/zip-archives/{directory_name}.zip"
+    print(f"Download it at: {zip_url}")
 
 # Define a function to remove a directory
 def remove_directory(directory_name):
