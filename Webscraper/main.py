@@ -20,19 +20,14 @@ def download_images(image_urls, directory_name):
 # Define a function to create a ZIP archive of a directory
 def zip_directory(directory_name):
     # Define the path to the ZIP archive directory
-    zip_directory_path = Path("zip-archives") / directory_name
+    zip_directory_path = Path("C:/Users/shawn/Documents/GitHub/Python-Projects/Webscraper/zip-archives")
     # Define the path to the source directory to be zipped
     directory_path = image_path / directory_name
 
     # Create a ZIP archive of the source directory
-    make_archive(zip_directory_path, "zip", directory_path)
-
-    # Print a message indicating the ZIP archive creation
-    print(f"{directory_name}.zip created!")
-
-    # Zip URL to download images
-    zip_url = f"https://github.com/ShawnZhuPro/Python-Projects/raw/main/zip-archives/{directory_name}.zip"
-    print(f"Download it at: {zip_url}")
+    archive_path = make_archive(zip_directory_path / directory_name, "zip", directory_path)
+    
+    print(f"{directory_name}.zip created in zip-archives directory.")
 
 # Define a function to remove a directory
 def remove_directory(directory_name):
@@ -129,7 +124,7 @@ RENAME = 6
 EXIT = 7
 
 # Define a username and the base image directory
-image_path = Path("images")
+image_path = Path("C:/Users/shawn/Documents/GitHub/Python-Projects/Webscraper/images")
 
 # Main loop for user interaction
 while True:
