@@ -30,7 +30,7 @@ def zip_directory(directory_name):
     # Print a message indicating the ZIP archive creation
     print(f"{directory_name}.zip created!")
 
-    # Provide the URL to download the ZIP archive
+    # Zip URL to download images
     zip_url = f"https://github.com/ShawnZhuPro/Python-Projects/raw/main/zip-archives/{directory_name}.zip"
     print(f"Download it at: {zip_url}")
 
